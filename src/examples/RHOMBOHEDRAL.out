@@ -1,0 +1,115 @@
+Bravais lattice: Rhombohedral [hexagonal setting]
+
+     a             b            c
+ 1.42650090    1.42650090   1.70155387
+     alpha         beta         gamma
+ 90.00000000    90.00000000   120.00000000
+
+
+===== Decomposition of new basis vectors over input basis =====
+ 1.000000  -1.000000  0.000000  <--- 1
+-1.000000   0.000000  1.000000  <--- 2
+-1.000000  -1.000000 -1.000000  <--- 3
+
+==== Number of atoms in cell (only atoms of primitive cell): 1 
+==== Atom positions (only atoms of primitive cell):
+
+ 0.00000000   0.00000000  0.00000000
+ Atom
+
+==== Number of nonequivalent sorts: 1
+==== Nonequivalent atoms, point group for each sort: ====
+
+Sort number: 1
+  Names of point group: -3m1  -3 2/m 1    D3d
+  New basis vectors for this point group:
+    1.0000   0.0000  0.0000  <--- 1
+    0.0000   1.0000  0.0000  <--- 2
+    0.0000   0.0000  1.0000  <--- 3
+
+  Atom positions: 1
+   0.00000000   0.00000000  0.00000000
+   Atom
+
+======================================================================
+
+Number and name of space group: 166 (R -3 m) [h axes]
+- Short - Full - Schoenflies - names of point group:
+ -3m1  -3 2/m 1    D3d
+
+Number of symmetry operations: 12
+Operation: 1
+ 1.0   0.0   0.0  0.000
+ 0.0   1.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 2
+ 0.0  -1.0   0.0  0.000
+ 1.0  -1.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 3
+-1.0   1.0   0.0  0.000
+-1.0   0.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 4
+ 0.0   1.0   0.0  0.000
+ 1.0   0.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 5
+ 1.0  -1.0   0.0  0.000
+ 0.0  -1.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 6
+-1.0   0.0   0.0  0.000
+-1.0   1.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 7
+-1.0   0.0   0.0  0.000
+ 0.0  -1.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 8
+ 0.0   1.0   0.0  0.000
+-1.0   1.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 9
+ 1.0  -1.0   0.0  0.000
+ 1.0   0.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 10
+ 0.0  -1.0   0.0  0.000
+-1.0   0.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 11
+-1.0   1.0   0.0  0.000
+ 0.0   1.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 12
+ 1.0   0.0   0.0  0.000
+ 1.0  -1.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+============================================================
+
+===== Number of possible shift vectors: 2 =====
+===== List of shift vectors:
+ 0.0000   0.0000   0.0000
+ 0.0000   0.0000   0.5000
+
+List of shifted cells:
+
+Cell #1 
+  Shift vector:  0.0000   0.0000   0.5000
+  Nonequivalent atoms :
+
+ 0.00000000   0.00000000  0.50000000
+ Atom

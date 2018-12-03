@@ -1,0 +1,13 @@
+SOURCE=\
+	base.o \
+	tutor.o \
+	constant.o \
+	mpi.o \
+	lattice.o \
+	poscar.o \
+	random.o \
+	spinsym.o \
+	symmetry.o \
+	symlib.o \
+	lattlib.o \
+	kpath.o

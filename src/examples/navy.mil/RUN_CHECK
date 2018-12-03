@@ -1,0 +1,30 @@
+#!/bin/csh -f
+
+unalias rm
+rm -f *.diff *.out_new
+
+echo > .LOG
+
+foreach i ( *.dat )
+  set j = $i:r
+
+ ../../sgroup $i $j.out_new -noeq
+ 
+ diff ./$j.out ./$j.out_new > ./$j.diff
+ if( -z ./$j.diff ) then
+    rm -f ./$j.out_new ./$j.diff 
+    echo "$i  --->  ok"
+    echo "$i  --->  ok" >> .LOG
+ else
+    echo "$j.out and $j.out_new ---> have differences"
+    echo "$j.out and $j.out_new ---> have differences" >> .LOG
+    cat   ./$j.diff >> .LOG
+    echo "\n\n" >> .LOG
+    rm -f ./$j.diff
+ endif
+ 
+end
+
+echo
+echo "------------------------------"
+echo "see `pwd`/.LOG file for details"

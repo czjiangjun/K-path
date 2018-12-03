@@ -1,0 +1,97 @@
+Bravais lattice: Hexagonal
+
+     a             b            c
+ 3.81000000    3.81000000   5.11000000
+     alpha         beta         gamma
+ 90.00000000    90.00000000   120.00000002
+
+
+===== Decomposition of new basis vectors over input basis =====
+ 1.000000   0.000000  0.000000  <--- 1
+ 0.000000   1.000000  0.000000  <--- 2
+ 0.000000   0.000000  1.000000  <--- 3
+
+==== Number of atoms in cell: 3
+==== Atom positions:
+
+ 0.24860000   0.00000000  0.33333300
+ Se
+ 0.00000000   0.24860000  0.66666633
+ Se
+ 0.75140000   0.75140000  0.00000000
+ Se
+
+==== Number of nonequivalent sorts: 1
+==== Nonequivalent atoms, point group for each sort: ====
+
+Sort number: 1
+  Names of point group: 2      2      C2
+  New basis vectors for this point group:
+    0.0000   0.0000  1.0000  <--- 1
+   -1.0000  -2.0000  0.0000  <--- 2
+    1.0000   0.0000  0.0000  <--- 3
+
+  Atom positions: 3
+   0.24860000   0.00000000  0.33333300
+   Se
+   0.00000000   0.24860000  0.66666633
+   Se
+   0.75140000   0.75140000  0.00000000
+   Se
+
+======================================================================
+
+Number and name of space group: 152 (P 31 2 1)
+- Short - Full - Schoenflies - names of point group:
+ 321    321    D3
+
+Number of symmetry operations: 6
+Operation: 1
+ 1.0   0.0   0.0  0.000
+ 0.0   1.0   0.0  0.000
+ 0.0   0.0   1.0  0.000
+
+Operation: 2
+ 0.0  -1.0   0.0  0.000
+ 1.0  -1.0   0.0  0.000
+ 0.0   0.0   1.0  1/3
+
+Operation: 3
+-1.0   1.0   0.0  0.000
+-1.0   0.0   0.0  0.000
+ 0.0   0.0   1.0  2/3
+
+Operation: 4
+ 0.0   1.0   0.0  0.000
+ 1.0   0.0   0.0  0.000
+ 0.0   0.0  -1.0  0.000
+
+Operation: 5
+ 1.0  -1.0   0.0  0.000
+ 0.0  -1.0   0.0  0.000
+ 0.0   0.0  -1.0  2/3
+
+Operation: 6
+-1.0   0.0   0.0  0.000
+-1.0   1.0   0.0  0.000
+ 0.0   0.0  -1.0  1/3
+
+============================================================
+
+===== Number of possible shift vectors: 2 =====
+===== List of shift vectors:
+ 0.0000   0.0000   0.0000
+ 0.0000   0.0000   0.5000
+
+List of shifted cells:
+
+Cell #1 
+  Shift vector:  0.0000   0.0000   0.5000
+  Nonequivalent atoms :
+
+ 0.24860000   0.00000000  0.83333300
+ Se
+ 0.00000000   0.24860000  0.16666633
+ Se
+ 0.75140000   0.75140000  0.50000000
+ Se

@@ -98,6 +98,7 @@ MODULE msymmetry
 !=======================================================================
       CALL PRICEL(IBRAV,CELDIM,A(1,1),A(1,2),A(1,3),TAU,P1,P2,P3,PTRANS, &
      &    NPCELL,IPTYP,PDIM,NTYP,1,NITYP,NIOND,TAUROT,INDROT,WRKROT,IU6)
+
       AP(1,1)=P1(1)
       AP(2,1)=P1(2)
       AP(3,1)=P1(3)
@@ -412,7 +413,7 @@ MODULE msymmetry
       DIMENSION PTRANS(NIOND+2,3),INDROT(NIOND+2),ATOMOM(3*NIOND)
       DIMENSION TMP(NIOND,3,5),VEC(NIOND,3,3),SPIN(NIOND)
 
-      DIMENSION A1(3),A2(3),A3(3),IOPS(3,3,48),CELDIM(6),PDIM(6)
+      DIMENSION A1(3),A2(3),A3(3),IOPS(3,3,48),CELDIM(6),PDIM(6), CELLDIM(6)
       DIMENSION COO1(3),COO2(3),B1(3),B2(3),B3(3),P1(3),P2(3),P3(3)
 
       COMMON /SYMM/ ISYMOP(3,3,48),NROT,IGRPOP(3,3,48),NROTK, &
@@ -444,6 +445,7 @@ MODULE msymmetry
          TMP(IA,2,1)=POSION(2,IA)
          TMP(IA,3,1)=POSION(3,IA)
     3 ENDDO
+
 !=======================================================================
 ! copy all coordinates into a temporary array and transform them to the
 ! representation in the basis (A1,A2,A3): store in TMP(:,:,2)
@@ -476,6 +478,7 @@ MODULE msymmetry
 
       CALL PRICELV(IBRAV,CELDIM,A(1,1),A(1,2),A(1,3),TAU,VEC,SPIN,P1,P2,P3,PTRANS, &
      &    NPCELL,IPTYP,PDIM,NTYP,1,NITYP,NIOND,3,TAUROT,INDROT,WRKROT,IU6)
+
 
       AP(1,1)=P1(1)
       AP(2,1)=P1(2)
