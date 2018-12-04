@@ -120,7 +120,7 @@ F90SRC+=kpoint_path.f90
 
 # export
 
-.PHONY: all cleanall clean sources dependencies depend libs $(LIB) c.o
+.PHONY: all cleanall clean sources c.o dependencies depend libs $(LIB) 
 
 all: libs sources c.o
 	$(MAKE) kpoint_path ; cp kpoint_path $(BINDIR)/$(EXE)
