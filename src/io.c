@@ -892,14 +892,40 @@ int write_res(char *fname, t_cell *cl, char name_srt[MAX_ATOMS][MAX_CHARS],
      }
      i+=cl_new->natsrt[isrt];
   }
-  fprintf(fl,"\n======================================================================\n");
+
+  fprintf(fl,"\n=========================================================================");
+  fprintf(fl,"\n========= Bravais Lattice ====== point group ====== Space group =========");
+  fprintf(fl,"\n=========================================================================\n\n");
+   
+  if( sw->is_wien_input && lat == RHOMBOHEDRAL) {
+     fprintf(fl,"NOTE: atom positions and space group operations\n"
+                "      are given in rhombohedral primitive basis.\n"
+                "      a,b,c, alpha,beta, gamma - parameters of hexagonal cell.\n\n");
+      fprintf(fl,"Bravais lattice: %s\n\n",lat_name[lat]);     
+  } else {
+     if( sw->is_prim ) {
+          fprintf(fl,"NOTE: atom positions and space group operations\n"
+                     "      are given in primitive basis.\n\n");
+          fprintf(fl,"Bravais lattice : %s\n\nParameters of primitive cell:\n",
+                     lat_name[lat]);
+     }
+     else {
+       if( lat == RHOMBOHEDRAL )
+           fprintf(fl,"Bravais lattice: %s [hexagonal setting\n\n",lat_name[lat]);
+       else
+         fprintf(fl,"Bravais lattice: %s\n\n",lat_name[lat]);
+     }
+  }
+   
+  fprintf(fl,"Names of point group [Short-Full-Schoenflies]: %s\n",
+          name_pgrp[npgrp]);
+
   if( lat==RHOMBOHEDRAL && ! sw->is_prim )
      fprintf(fl,"\nNumber and name of space group: %s [h axes]\n",sgrp_name);
    else
      fprintf(fl,"\nNumber and name of space group: %s\n",sgrp_name);
-   
-  fprintf(fl,"- Short - Full - Schoenflies - names of point group:\n %s\n",
-          name_pgrp[npgrp]);
+  fprintf(fl,"\n=========================================================================\n");
+
   fprintf(fl,"\nNumber of symmetry operations: %d\n",nop);
   for(i=0; i < nop; i++) {
        fprintf(fl,"Operation: %d\n",i+1);
