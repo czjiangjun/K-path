@@ -20,6 +20,7 @@
         LOGICAL LSDYN                 ! selective dynamics (yes/ no)
         LOGICAL LDIRCO                ! positions in direct/recproc. lattice
         REAL(q), POINTER :: POSION(:,:)  ! positions usually same as DYN%POSION
+        REAL(q), POINTER :: POSION_STD(:,:)  ! positions usually same as DYN%POSION
         LOGICAL,POINTER ::  LSFOR(:,:) ! selective dynamics
         INTEGER, POINTER :: ITYP(:)   ! type for each ion
         INTEGER, POINTER :: NITYP(:)  ! number of ions for each type
@@ -39,6 +40,7 @@
       TYPE dynamics
 !only DYN
         REAL(q), POINTER :: POSION(:,:) ! positions
+        REAL(q), POINTER :: POSION_STD(:,:) ! positions
         REAL(q), POINTER :: POSIOC(:,:) ! old positions
         REAL(q), POINTER :: VEL(:,:)  ! velocities
         REAL(q), POINTER :: D2(:,:)   ! predictor corrector/coordinates
